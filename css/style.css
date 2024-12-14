@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0px auto;
+}
+
+/* header */
+.header{
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .nav-link{
+    display: flex;
+    gap: 30px;
+}
+.nav-link a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Hero section */
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-section .hero-detail{
+    font-size: 2rem;
+    padding: 10px;
+}
+.hero-detail p{
+    color: rgba(128, 128, 128, 0.764);
+    font-size: 16px;
+    margin: 26px 0px;
+}
+/* btn in hero section*/
+.hero-detail button{
+    padding: 8px 35px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.hero-detail .btn{
+    display: flex;
+    gap: 20px;
+}
+/* btn1 */
+.hero-detail .btn1{
+    background-color: rgba(75, 75, 253, 0.775);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hero-detail .btn1:hover {
+    background-color: rgba(75, 75, 253, 1);
+}
+/* btn2 */
+.hero-detail .btn2{
+    color: blue;
+    background-color: rgba(135, 206, 250, 0.173);
+}
+.hero-detail .btn2:hover {
+    background-color: rgba(135, 206, 250, 0.3);
+}
+/* image in hero section */
+.hero-section .hero-img{
+    width: 100%;
+    padding: 20px;
+}
+.hero-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* MORE Product btn */
+.more-product-btn{
+    text-decoration: none;
+}
+.more-product-btn button{
+    display: block;
+    margin: 30px auto;
+    padding: 10px 45px;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(52, 248, 3);
+    color: rgb(250, 250, 250);
+    transition: all 0.5s;
+}
+.more-product-btn button:hover{
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+.footer{
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 30px 0px;
+    color: white;
+    text-align: center;
+}
+.footer h2{
+    color: white;
+}
+.footer h3{
+    margin: 10px;
+}
+
+

@@ -1,0 +1,60 @@
+.bar{
+    display: none;
+}
+.nav-ml{
+    display: none;
+}
+
+@media (max-width: 1184px) {
+    .product{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 832px) {
+    .product{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-img img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .header .nav-link{
+        display: none;
+    }
+    .header .bar{
+        display: flex;
+    }
+
+    .nav-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        background-color: #f0f0f0; /* Set background color of the nav container */
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+    }
+    .nav-mobile a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        padding: 10px 20px; /* Add padding for a clickable area */
+        border-radius: 5px; /* Round the corners of each link */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+    }
+
+    .product{
+        grid-template-columns: 1fr;
+    }
+}
